@@ -3,9 +3,10 @@ package com.ekumen.rajawaliexamplepip;
 import android.app.Activity;
 import android.os.Bundle;
 
-import org.rajawali3d.renderer.pip.RajawaliPipRenderer;
+import org.rajawali3d.renderer.RajawaliPipRenderer;
 import org.rajawali3d.renderer.pip.SubRenderer;
 import org.rajawali3d.surface.RajawaliSurfaceView;
+import org.rajawali3d.util.RajLog;
 
 /**
  * Created by Julian Cerruti <jcerruti@creativa77.com> on 8/19/15.
@@ -19,6 +20,7 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        RajLog.setDebugEnabled(true);
         super.onCreate(savedInstanceState);
 
         mView = new RajawaliSurfaceView(this);
@@ -37,12 +39,12 @@ public class MainActivity extends Activity {
     @Override
     protected void onPause() {
         super.onPause();
-        mView.onPause();
+        //mView.onPause();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        mView.onResume();
+        //mView.onResume();
     }
 }

@@ -40,6 +40,8 @@ public class MiniRenderer extends SubRenderer {
         getCurrentScene().addChild(o);
     }
 
+
+
     @Override
     protected void onRender() {
 
